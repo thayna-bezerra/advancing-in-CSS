@@ -1,0 +1,35 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --bg_color-header: #8E9AAF;
+  --bg_color-main:#EFF1FF;
+  --bg_color-logo: #CBC0D3;
+  --bg_color-img: #FEEAFA;
+  --font_color-main: #5C6981;
+
+  --font-tittles: 'Staatliches', cursive;
+
+  font-size: 62.5%;  
+}
+
+header, h2{
+  font-family: var(--font-tittles);
+  font-weight: normal;
+}
+
+header{
+  background-color: var(--bg_color-header);
+  color: #fff;
+  font-size: 2.0rem;
+
+  width: 384px;
+  height: 279px;
+}
+
+main{
+  background-color: var(--bg_color-main);
+}
