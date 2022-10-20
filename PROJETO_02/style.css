@@ -40,6 +40,7 @@ header{
 
 header img {
   padding-bottom: 30px;
+  animation: topdown 300ms 300ms backwards;
 }
 
 header div{
@@ -71,9 +72,13 @@ main p {
   object-fit: cover;
 
   padding: 32px;
+  
+  animation: downtop 1000ms 100ms backwards;
 }
 
 .imagem h2 {
+  animation: topdown 1000ms 300ms backwards;
+
   background-color: var(--bg_color-img);
   color: #4A4E69;
 
@@ -94,3 +99,27 @@ main p {
   top: 4.7rem;
   right: 4.7rem;
 }
+
+@keyframes topdown {
+  0% {
+    opacity: 0;
+    transform: translateY(-25px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+ }
+
+ @keyframes downtop{
+  0% {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+ }
