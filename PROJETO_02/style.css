@@ -50,6 +50,15 @@ header div{
 main{
   background-color: var(--bg_color-main);
   display: grid;
+  align-items: center;
+}
+
+main p {
+  font-size: 15px;
+  color: #23053A;
+
+  padding: 25px 29px 56px 29px;
+  text-align: center;
 }
 
 .imagem{
@@ -60,6 +69,8 @@ main{
   width: 100%;
   height: auto;
   object-fit: cover;
+
+  padding: 32px;
 }
 
 .imagem h2 {
@@ -80,6 +91,6 @@ main{
 
   position: absolute;
   
-  top: 2.5rem;
-  right: 2.5rem;
+  top: 4.7rem;
+  right: 4.7rem;
 }
