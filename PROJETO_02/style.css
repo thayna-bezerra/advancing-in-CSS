@@ -16,10 +16,6 @@
   font-size: 62.5%;  
 }
 
-.page {
-  max-width: clamp(33rem, 30rem + 60vw, 117rem);
-}
-
 header, h2{
   font-family: var(--font-tittles);
   font-weight:normal;
@@ -98,6 +94,35 @@ main p {
   
   top: 4.7rem;
   right: 4.7rem;
+}
+
+footer p{
+  opacity: 0;
+}
+
+@media (min-width: 774px) {
+  .page{
+    display:flex;
+  }
+
+  header{
+    display:block;
+    text-align: center;
+
+    min-width: 377px;
+  }
+
+  footer p{
+    opacity: 1;
+    color: #4A4E69;
+    font-size: 14px;
+    text-align: center;
+  }
+
+  footer p span{
+    font-weight: bold;
+  }
+
 }
 
 @keyframes topdown {
